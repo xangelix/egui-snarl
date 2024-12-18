@@ -10,7 +10,9 @@ path = "../examples/demo.rs"
 
 [dependencies]
 egui = { version = "0.30" }
-egui-probe = { version = "0.7", features = ["derive"] }
+egui-probe = { version = "0.7.0", features = [
+    "derive",
+], optional = true, git = "https://github.com/xangelix/egui-probe.git", branch = "egui-0.30-merged" }
 eframe = { version = "0.30", features = ["serde", "persistence"] }
 egui_extras = { version = "0.30", features = ["all_loaders"] }
 syn = { version = "2.0", features = ["extra-traits"] }

@@ -19,7 +19,9 @@ egui = { version = "0.30" }
 slab = { version = "0.4" }
 serde = { version = "1.0", features = ["derive"], optional = true }
 
-egui-probe = { version = "0.7.0", features = ["derive"], optional = true }
+egui-probe = { version = "0.7.0", features = [
+    "derive",
+], optional = true, git = "https://github.com/xangelix/egui-probe.git", branch = "egui-0.30-merged" }
 
 [dev-dependencies]
 eframe = { version = "0.30", features = ["serde", "persistence"] }
